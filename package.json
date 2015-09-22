@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/weflex/moojs/issues"
   },
-  "homepage": "https://github.com/weflex/moojs#readme"
+  "homepage": "https://github.com/weflex/moojs#readme",
+  "dependencies": {
+    "esprima": "^2.6.0"
+  }
 }
