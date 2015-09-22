@@ -1,0 +1,19 @@
+{
+  "name": "moojs",
+  "version": "1.0.0",
+  "description": "an HTTP version compatibility service for Node.js/Loopback platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/weflex/moojs.git"
+  },
+  "author": "Yorkie Liu <yorkiefixer@gmail.com>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/weflex/moojs/issues"
+  },
+  "homepage": "https://github.com/weflex/moojs#readme"
+}
