@@ -31,6 +31,7 @@ fs.accessSync(dir);
 // load contents
 const globurl = dir + '/common/models/*.js';
 const scripts = glob(globurl).map(function (url) {
+  debug(`parsing ${url}`);
   const code = fs.readFileSync(url, 'utf8');
   const root = esprima.parse(code);
 
@@ -51,7 +52,7 @@ const scripts = glob(globurl).map(function (url) {
         if (b.expression.callee.object.name === model) {
           if (b.expression.callee.property.name === 'remoteMethod') {
             const args = toValue(b.expression.arguments);
-            console.log(args[1]);
+            console.log(args[1], model);
           }
         }
       }
