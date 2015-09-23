@@ -7,6 +7,7 @@
     "moo": "bin/moo"
   },
   "scripts": {
+    "start": "DEBUG=moo:service node lib/service.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,11 +21,13 @@
   },
   "homepage": "https://github.com/weflex/moojs#readme",
   "dependencies": {
+    "body-parser": "^1.14.0",
     "commander": "2.8.1",
     "debug": "2.2.0",
     "esprima": "2.6.0",
     "esprima-get-object": "1.0.1",
     "esprima-to-value": "1.0.3",
+    "express": "^4.13.3",
     "glob": "5.0.14",
     "underscore": "^1.8.3"
   },
