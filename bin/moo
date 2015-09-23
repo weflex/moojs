@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const fs = require('fs');
+const glob = require('glob').sync;
+const program = require('commander');
+const pkgInfo = require('../package.json');
+const moo = require('../lib/moo');
+
+program
+  .version(pkgInfo.version)
+  .usage('<directory>')
+  .parse(process.argv);
+
+const dir = program.args[0];
+
+if (!dir) {
+  console.error('directory required');
+  process.exit();
+}
+
+// try access, if not exists, will throw errors
+fs.accessSync(dir);
+
+// load contents
+const globurl = dir + '/common/models/*.js';
+const json = glob(globurl).map(moo);
+
+console.log(json);

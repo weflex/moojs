@@ -2,9 +2,9 @@
   "name": "moojs",
   "version": "1.0.0",
   "description": "an HTTP version compatibility service for Node.js/Loopback platform",
-  "main": "index.js",
+  "main": "lib/moo.js",
   "bin": {
-    "moo": "index.js"
+    "moo": "bin/moo"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,6 +25,7 @@
     "esprima": "2.6.0",
     "esprima-get-object": "1.0.1",
     "esprima-to-value": "1.0.3",
-    "glob": "5.0.14"
+    "glob": "5.0.14",
+    "underscore": "^1.8.3"
   }
 }
