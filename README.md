@@ -4,6 +4,10 @@ an HTTP version compatibility service for JavaScript platform
 
 > **Note**: *only supports loopback for now*
 
+## Requirements
+
++ IO.js 2.5.0
+
 ## Install
 
 ```
