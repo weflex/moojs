@@ -4,7 +4,7 @@
   "description": "an HTTP version compatibility service for Node.js/Loopback platform",
   "main": "index.js",
   "bin": {
-    "moo": "index.js",
+    "moo": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +20,11 @@
   },
   "homepage": "https://github.com/weflex/moojs#readme",
   "dependencies": {
-    "esprima": "^2.6.0"
+    "commander": "^2.8.1",
+    "debug": "^2.2.0",
+    "esprima": "^2.6.0",
+    "esprima-get-object": "^1.0.1",
+    "esprima-to-value": "^1.0.2",
+    "glob": "^5.0.14"
   }
 }
