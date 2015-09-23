@@ -2,6 +2,8 @@
 
 an HTTP version compatibility service for JavaScript platform
 
+> **Note**: *only supports loopback for now*
+
 ## Install
 
 ```
