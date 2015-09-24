@@ -28,8 +28,8 @@
     "esprima-get-object": "1.0.1",
     "esprima-to-value": "1.0.3",
     "express": "^4.13.3",
-    "github-api": "^0.10.6",
     "glob": "5.0.14",
+    "octop": "^1.0.1",
     "underscore": "^1.8.3"
   },
   "engines": {
