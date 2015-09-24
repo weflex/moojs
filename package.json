@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "DEBUG=moo:service node lib/service.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "DEBUG=moo:* NODE_ENV=test ./node_modules/.bin/tape test/service.js"
   },
   "repository": {
     "type": "git",
@@ -30,10 +30,14 @@
     "esprima-to-value": "1.0.3",
     "express": "^4.13.3",
     "glob": "5.0.14",
-    "octop": "^1.0.1",
+    "octop": "^1.0.3",
     "underscore": "^1.8.3"
   },
   "engines": {
     "iojs": "2.5.0"
+  },
+  "devDependencies": {
+    "supertest": "^1.1.0",
+    "tape": "^4.2.0"
   }
 }
