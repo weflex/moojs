@@ -25,6 +25,8 @@ fs.accessSync(dir);
 
 // load contents
 const globurl = dir + '/common/models/*.js';
-const json = glob(globurl).map(moo);
+const json = glob(globurl).map(function (url) {
+  return moo(fs.readFileSync(url, 'utf8'));
+});
 
 console.log(json);
