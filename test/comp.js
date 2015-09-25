@@ -105,3 +105,20 @@ test('Comp.comp with modified', function (t) {
   t.end();
 });
 
+test('Comp.summary with modified', function (t) {
+  const prev = [
+    [ 'a', {'foo': 'bar'} ],
+    [ 'b', {'tar': 'get'} ],
+  ];
+  const next = [
+    [ 'b', {'tar': 'got'} ],
+    [ 'c', 300 ],
+    undefined,
+  ];
+  const r = comp.comp(prev, next);
+  const s = comp.summary(r, '1.3.0', '1.4.0', 
+    'https://github.com/weflex/moojs', 'master');
+  console.log(s);
+  t.end();
+});
+
