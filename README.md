@@ -1,8 +1,8 @@
 # moojs
 
-Loopback is a highly framed and flexible HTTP/Restful framework for Node.js platform.
-So Moojs is a series of modules to compute the latest backwards version for a 
-Github-based repository.
+[LoopBack](https://github.com/strongloop/loopback) is a highly framed and 
+flexible HTTP/Restful framework for Node.js platform. So Moojs is a series 
+of modules to compute the latest backwards version for a Github-based repository.
 
 Moojs supports the following components:
 
