@@ -15,6 +15,20 @@ test('Comp.index', function (t) {
   t.end();
 });
 
+test('Comp.index with empty', function (t) {
+  t.plan(3);
+  const prev = [
+    [ 'a', {'foo': 'bar'} ],
+    [ 'b', {'tar': 'get'} ],
+    undefined,
+  ];
+  const idx = comp.index(prev);
+  t.ok(idx instanceof Map, 'comp.index should return a Map object');
+  t.equal(idx.get('a'), prev[0][1]);
+  t.equal(idx.get('b'), prev[1][1]);
+  t.end();
+});
+
 test('Comp.comp with equal', function (t) {
   t.plan(3);
   const prev = [
@@ -60,6 +74,7 @@ test('Comp.comp with deletion', function (t) {
   ];
   const next = [
     [ 'a', {'foo': 'bar'} ],
+    undefined,
   ];
   const r = comp.comp(prev, next);
   t.deepEqual(r.addition, []);
@@ -79,6 +94,7 @@ test('Comp.comp with modified', function (t) {
   const next = [
     [ 'a', {'foo': 'bar'} ],
     [ 'b', {'tar': 'got'} ],
+    undefined,
   ];
   const r = comp.comp(prev, next);
   t.deepEqual(r.addition, []);
