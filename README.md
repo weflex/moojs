@@ -1,10 +1,11 @@
 # moojs
 
 [LoopBack](https://github.com/strongloop/loopback) is a highly framed and 
-flexible HTTP/Restful framework for Node.js platform. So Moojs is a series 
-of modules to compute the latest backwards version for a Github-based repository.
+flexible HTTP/Restful framework for Node.js platform. So 
+[Moojs](https://github.com/weflex/moojs) is a series of modules to compute 
+the latest backwards version for a Github-based repository.
 
-Moojs supports the following components:
+[Moojs](https://github.com/weflex/moojs) supports the following components:
 
 + a command-line tool: `moo` to get started with how moojs works for your 
   LoopBack apps.
@@ -19,18 +20,26 @@ Moojs supports the following components:
   - moojs needs the ability to comment, label and push status for your repository,
     so you have to set the environment variable `GITHUB_ACCESS_TOKEN` when you
     start the service.
-  - moojs needs a field `backwards` in your `package.json`.
+  - [Moojs](https://github.com/weflex/moojs) needs a field `backwards` in your 
+    `package.json`.
 
 ## Installation
 
-```
+```sh
 $ npm install moojs -g
 ```
 
 ### Deployment on [Heroku](https://herokuapp.com)
 
 Because of builtin `Procfile` in this project, so you could easily by connecting one
-fork of this project to deploy Moojs on [Heroku](https://herokuapp.com).
+fork of this project to deploy [Moojs](https://github.com/weflex/moojs) on 
+[Heroku](https://herokuapp.com).
+
+Of course you could deploy on your own machine, the startup script is:
+
+```sh
+$ npm start
+```
 
 ### Webhooks Setup
 
@@ -48,10 +57,10 @@ You have to setup webhook mannually for now, the steps are below shown:
 + click the green button "Add webhook" to submit.
 + working
 
-### How does Moojs service work?
+### How does [Moojs](https://github.com/weflex/moojs) work?
 
 When you successfully deployed moojs and added webhook to your repository, you would
-see the following 2 things in your later PR page:
+see the following 2 things in your PRs:
 
 + if the current `backwards` value is not equal to the computed value, the service would
   comment on this discussion with some descriptive text to tell the condition.
@@ -62,4 +71,4 @@ see the following 2 things in your later PR page:
 
 ## License
 
-MPL-2.0
+MPL-2.0 Licensed
