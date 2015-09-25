@@ -116,8 +116,8 @@ test('Comp.summary with modified', function (t) {
     undefined,
   ];
   const r = comp.comp(prev, next);
-  const s = comp.summary(r, '1.3.0', '1.4.0', 
-    'https://github.com/weflex/moojs', 'master');
+  const s = comp.summary(r, '1.3.0', 'master', 
+    'https://github.com/weflex/moojs');
   console.log(s);
   t.end();
 });
