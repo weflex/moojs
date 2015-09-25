@@ -1,4 +1,4 @@
-# moojs
+# moojs [![Build Status](https://travis-ci.org/weflex/moojs.svg?branch=master)](https://travis-ci.org/weflex/moojs)
 
 [LoopBack](https://github.com/strongloop/loopback) is a highly framed and 
 flexible HTTP/Restful framework for Node.js platform. So 
