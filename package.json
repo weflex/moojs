@@ -27,7 +27,7 @@
     "es6-promisify": "^3.0.0",
     "esprima": "2.6.0",
     "esprima-get-object": "1.0.1",
-    "esprima-to-value": "^1.0.4",
+    "esprima-to-value": "^1.0.5",
     "express": "^4.13.3",
     "glob": "5.0.14",
     "octop": "^1.0.7",
