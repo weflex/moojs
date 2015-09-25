@@ -1,14 +1,19 @@
 # moojs
 
-an HTTP version compatibility service for JavaScript platform
+Loopback is a highly framed and flexible HTTP/Restful framework for Node.js platform.
+So Moojs is a series of modules to compute the latest backwards version for a 
+Github-based repository.
 
-> **Note**: *only supports loopback for now*
+Moojs supports the following components:
+
++ a command-line tool: `moo` to get started with how moo works for your LoopBack apps.
++ a service app to integrate with your Github repository's webhooks.
 
 ## Requirements
 
 + IO.js 2.5.0
 
-## Install
+## Installation
 
 ```
 $ npm install moojs -g
