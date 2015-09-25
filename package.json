@@ -1,6 +1,6 @@
 {
   "name": "moojs",
-  "version": "1.4.3",
+  "version": "1.5.0",
   "description": "an HTTP version compatibility service for Node.js/Loopback platform",
   "main": "lib/moo.js",
   "bin": {
